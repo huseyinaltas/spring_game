@@ -31,8 +31,27 @@ public class UserGameDetails {
 	@Column(name="ready")
 	private String ready;
 	
+	@Column(name="time_stamp")
+	private String timeStamp;
 	
 	
+	
+	
+	
+	public String getTimeStamp() {
+		return timeStamp;
+	}
+
+
+
+
+	public void setTimeStamp(String timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+
+
+
+
 	public String getGamerid() {
 		return gamerid;
 	}
@@ -96,12 +115,14 @@ public class UserGameDetails {
 	
 	
 
-	public UserGameDetails(String gamerid, String gameroom, String setnumto, String ready) {
+	public UserGameDetails(String gamerid, String gameroom, String setnumto, 
+			String ready, String timeStamp) {
 		super();
 		this.gamerid = gamerid;
 		this.gameroom = gameroom;
 		this.setnumto = setnumto;
 		this.ready = ready;
+		this.timeStamp = timeStamp;
 	}
 	
 	
