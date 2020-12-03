@@ -90,9 +90,7 @@ public class UserGameDetailsService {
 	    if(diffDay>0 || diffDay<0) {
 	    	return -1;
 	    }
-	    else if(diffHour >= 12 || diffHour <= -12) {
-	    	return -1;
-	    }
+	    
 	    else {
 	    	return 1;
 	    }

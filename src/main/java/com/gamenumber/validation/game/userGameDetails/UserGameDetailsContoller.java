@@ -89,11 +89,11 @@ public class UserGameDetailsContoller {
 	}
 	
 	@CrossOrigin(origins = "*")
-	@DeleteMapping(value= "/gameroom/deleteOneDay", produces = MediaType.APPLICATION_JSON_VALUE)
+	@DeleteMapping(value= "/gamer/deleteOneDay", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public String deleteFiveMinutesPassded() {
 		userGameDetails.deleteOneDay();
-		return "All rooms have been deleted that no action happened last 5 minutes";
+		return "All gamers have been deleted that no action happened last 1 day";
 	}
 	
 
